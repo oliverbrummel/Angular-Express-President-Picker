@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app = "getPrez">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular/Express Election Challenge</title>
+    <script src = "angular.min.js"></script>
+    <script src = "client.js"></script>
+    <link rel = "stylesheet" href = "styles.css" />
+  </head>
+  <body ng-controller = "PrezController">
+    <h1>Who it gon be?</h1>
+    <br />
+
+    <div ng-show = "clickedShow" class = "lists">
+    <ul id = "demList">
+      <h3 ng-show = "clickedShow">Democrays</h3>
+      <li ng-repeat = "dem in democrats">
+        {{dem}}
+      </li>
+    </ul>
+    <ul id = "repList">
+      <h3 ng-show = "clickedShow">Republicants</h3>
+      <li ng-repeat = "rep in republicans">
+        {{rep}}
+      </li>
+    </ul>
+  </div>
+
+    <button ng-click = "makeList()">Load Candidates</button>
+
+    <button ng-click = "getWinner()">Pick Winner!</button>
+      <div ng-show = "clickedWinner">
+        <h2>{{winner}}</h2>
+      </div>
+  </body>
+</html>

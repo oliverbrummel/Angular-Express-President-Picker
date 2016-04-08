@@ -1,0 +1,23 @@
+body {
+  background: url("http://ropercenter.cornell.edu/wp/wp-content/uploads/2015/01/us-elections-20122.jpg") no-repeat;
+  background-size: cover;
+  font-family: Copperplate
+}
+
+h1 {
+  display: inline-block;
+  background-color: red;
+  color: white;
+}
+
+.lists {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 3px #000000;
+}
+
+h2 {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+}
